@@ -28,10 +28,8 @@ func TestThisWillFail(t *testing.T) {
 	original := &Product{Name: "Тест", Price: 100}
 	cloned := original.Clone()
 	
-	// Это условие ложно, тест упадёт
 	if original == cloned {
 		t.Error("OK")
 	}
-	// Принудительно падаем
 	t.Error("Демонстрационная ошибка для преподавателя")
 }
