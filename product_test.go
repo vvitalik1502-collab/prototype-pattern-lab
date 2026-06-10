@@ -23,13 +23,4 @@ func TestRegistryWorks(t *testing.T) {
 		t.Error("Копия не создана!")
 	}
 }
-// Этот тест специально падает для демонстрации
-func TestThisWillFail(t *testing.T) {
-	original := &Product{Name: "Тест", Price: 100}
-	cloned := original.Clone()
-	
-	if original == cloned {
-		t.Error("OK")
-	}
-	t.Error("Демонстрационная ошибка для преподавателя")
-}
+
